@@ -18,6 +18,10 @@ untuk memudahkan perhitungan mu!
 """)
 
 st.write("""
+klik tanda panah di pojok kiri atas untuk mulai mengitung!
+""")
+
+st.write("""
 support saya untuk mengembangkan website ini!
 """)
 

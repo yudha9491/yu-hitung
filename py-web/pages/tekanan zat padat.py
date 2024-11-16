@@ -39,18 +39,21 @@ if operation == "tekanan(p)":
     A = st.number_input("Masukan luas bidang:", value=1.0)
 
     result = F / A
-    st.write("Hasil:", result, "Pa")
+    if st.button("Hitung tekanan"):
+        st.write("Hasil:", result, "Pa")
 
 elif operation == "Gaya(F)":
     A = st.number_input("Masukan luas bidang:")
     P = st.number_input("Masukan tekanan (Pa):")
     result = A*P
-    st.write("Hasil: ", result, "N")
+    if st.button("Hitung Gaya"):
+        st.write("Hasil: ", result, "N")
 
 elif operation == "luas bidang(A)":
     F = st.number_input("masukan gaya (N):")
     P = st.number_input("Masukan tekanan (Pa):")
     result = F*P
-    st.write("Hasil: ", result, "m3")
+    if st.button("Hitung luas bidang"):
+        st.write("Hasil: ", result, "m3")
 
 

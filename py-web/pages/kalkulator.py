@@ -24,4 +24,5 @@ elif operation == "Perkalian":
 elif operation == "Pembagian":
     result = num1 / num2 if num2 != 0 else "Tidak dapat dibagi dengan nol"
 
-st.write("Hasil:", result)
+if st.button("Hitung"):
+    st.write("Hasil:", result)

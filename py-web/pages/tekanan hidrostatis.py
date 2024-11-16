@@ -44,7 +44,8 @@ if operation == "tekanan(p)":
 
     
     result = rho*depth*gravity
-    st.write("Hasil:", result, "N/m²")
+    if st.button("Hitung tekanan"):
+        st.write("Hasil:", result, "N/m²")
 
 elif operation == "massa jenis fluida(kg/m³)":
     depth = st.number_input("Masukkan kedalaman atau tinggi kolom fluida (m):", min_value=0.0, step=0.1)
@@ -52,7 +53,8 @@ elif operation == "massa jenis fluida(kg/m³)":
     gravity = st.number_input("Masukkan percepatan gravitasi (m/s²):", value=9.8, step=0.1)
 
     result = preasure/(depth*gravity)
-    st.write("Hasil: ", result, "kg/m³")
+    if st.button("Hitung massa jenis"):
+        st.write("Hasil: ", result, "kg/m³")
 
 elif operation == "kedalaman(m)":
     preasure = st.number_input("Masukkan tekanan(N/m²):", min_value=0.0, step=0.1)
@@ -60,4 +62,5 @@ elif operation == "kedalaman(m)":
     rho = st.number_input("Masukkan massa jenis fluida (kg/m³):", min_value=0.0, step=0.1)
 
     result = preasure/(rho*gravity)
-    st.write("Hasil: ", result, "m")
+    if st.button("Hitung kedalaman"):
+        st.write("Hasil: ", result, "m")
